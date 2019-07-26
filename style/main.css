@@ -2,6 +2,56 @@
 Arabic:    font-family: 'Amiri', sans-serif;
 English:   font-family: 'Slabo 27px', sans-serif;
 */
+.tooltip {
+    display:inline-block;
+    position:relative;
+    text-align:left;
+}
+
+.tooltip .left {
+    min-width:230px; 
+    top:50%;
+    right:100%;
+    margin-right:20px;
+    transform:translate(0, -50%);
+    padding:10px 20px;
+    color:#444444;
+    background-color:#EEEEEE;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltip:hover .left {
+    visibility:visible; opacity:1;
+}
+
+.tooltip .left i {
+    position:absolute;
+    top:50%;
+    left:100%;
+    margin-top:-12px;
+    width:12px;
+    height:24px;
+    overflow:hidden;
+}
+
+.tooltip .left i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:0;
+    top:50%;
+    transform:translate(-50%,-50%) rotate(-45deg);
+    background-color:#EEEEEE;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
 
 /*#### Global Configuration ####*/
 *{
@@ -70,6 +120,11 @@ hr {
     float: right;
     font-size: 110%;
     color: rgb(78, 102, 6);
+    transition: 0.5s;
+}
+.post-title:hover{
+    font-size:112%;
+    cursor: pointer;
 }
 
 .post-description{
@@ -83,6 +138,10 @@ hr {
     text-decoration: none;
     color: rgb(42, 144, 190);
     font-size: 80%;
+    transition: 0.5s;
+}
+.post-readmore:hover{
+    font-size: 90%;
 }
 
 .thumbnail{
