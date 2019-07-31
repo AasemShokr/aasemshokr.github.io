@@ -134,6 +134,7 @@ hr {
 
 .post-description{
     direction: rtl;
+	text-align: justify;
     color: rgb(20, 26, 3);
     font-size: 80%;
 }
