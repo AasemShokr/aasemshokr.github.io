@@ -122,20 +122,14 @@ hr {
 
 .post-date{
     color:rgb(6, 102, 81);
-    display: inline-block;
     font-size: 60%;
 }
 
 .post-title{
-    text-align: right;
-    float: right;
-    font-size: 110%;
+    text-align: center;
+    font-size: 200%;
     color: rgb(78, 102, 6);
-    transition: 0.5s;
-}
-.post-title:hover{
-    font-size:112%;
-    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .post-description{
