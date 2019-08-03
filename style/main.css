@@ -2,6 +2,306 @@
 Arabic:    font-family: 'Amiri', sans-serif;
 English:   font-family: 'Slabo 27px', sans-serif;
 */
+
+/*#### Global Configuration ####*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiri', sans-serif;
+    font-size: 25px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(139, 139, 139);
+    margin: 5px 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*#### header ####*/
+.header{
+    text-align: center;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.705)), url("../resources/back.png");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+
+.title{
+    font-size: 150%;
+    padding-bottom: 10px; 
+    color: #fff;
+    transition: 0.3s;
+}
+
+.title:hover{
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.navicon{
+	font-size: 160%;
+}
+
+.navli{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.navlia{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    padding-right: 20px;
+}
+
+.navlia:hover{
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.main-quote{
+    color: rgb(255, 255, 255);
+    font-size: 130%;
+    border-right: 10px solid rgb(255, 255, 255);
+    margin-top: 250px;
+}
+
+
+/* center the blockquote in the page */
+.blockquote-wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 0 20px;
+ }
+ 
+ /* Blockquote main style */
+ .blockquote {
+     position: relative;
+     font-family: 'Amiri', sans-serif;
+     font-weight: 800;
+     color: #ffffff;
+     padding: 30px 10px;
+     width: 100%;
+     max-width: 600px;
+     z-index: 1;
+     margin: 80px auto;
+     align-self: center;
+     border-left: solid 10px rgb(245, 204, 70);
+ }
+ 
+ /* Blockquote header */
+ .blockquote h1 {
+     position: relative;
+     color: #FFFFFF;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 1;
+     margin: 0;
+ }
+ 
+ /* Blockquote right double quotes */
+ .blockquote:after {
+     position: absolute;
+     content: "”";
+     color: rgba(255, 255, 255, 1);
+     font-size: 10rem;
+     line-height: 0;
+     bottom: -43px;
+     right: -20px;
+ }
+ 
+ /* increase header size after 600px */
+ @media all and (min-width: 600px) {
+     .blockquote h1 {
+         font-size: 60px;
+    }
+ 
+ }
+ 
+ /* Blockquote subheader */
+ .blockquote h4 {
+     position: relative;
+     color: rgb(245, 204, 70);
+     font-size: 1.4rem;
+     font-weight: normal;
+     line-height: 1;
+     margin: 25px 0;
+     padding-top: 20px;
+     z-index: 1;
+ }
+
+/*#### Content and posts Container ####*/
+
+.content-container{
+    width: 100%;
+    display: inline-block;
+}
+
+/*#### Post ####*/
+.posts-title{
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Amiri', sans-serif;
+    color: rgb(126, 126, 126);
+    margin-bottom: 90px;
+}
+.posts-title:after{
+    display: block;
+    width: 250px;
+    margin-bottom: 20px;
+    background-color: rgb(231, 187, 42);
+    height: 2px;
+    margin: 20px auto;
+    content: " ";
+}
+
+.post{
+    margin:   0 auto;
+    padding:  30px;
+    width:    60%;
+    /*border: 4px solid rgb(231, 187, 42);*/
+}
+
+.post-date{
+    color:rgb(6, 102, 81);
+    display: inline-block;
+    font-size: 60%;
+}
+
+.post-title{
+    text-align: right;
+    float: right;
+    font-size: 110%;
+    color: rgb(207, 146, 32);
+    transition: 0.5s;
+}
+.post-title:hover{
+    font-size:112%;
+    cursor: pointer;
+}
+
+.post-description{
+    direction: rtl;
+	text-align: justify;
+    color: rgb(31, 31, 31);
+    font-size: 80%;
+}
+
+.post-readmore{
+    text-align: right;
+    text-decoration: none;
+    color: rgb(42, 144, 190);
+    font-size: 80%;
+    transition: 0.5s;
+}
+.post-readmore:hover{
+    font-size: 90%;
+}
+
+.thumbnail{
+    width: 100%;
+    height: auto;
+
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.thumbnail:hover{
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/* side nav */
+.side-nav{
+    background-color: #202020;
+    height: 100%;
+}
+
+/*-- ABOUT --*/
+.about{
+    margin: 100px 0px;
+}
+
+.me-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid rgb(231, 187, 42);
+    transition: 0.3s;
+}
+
+.me-pic:hover
+{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.me-title{
+    text-align: center;
+    font-size: 120%;
+    font-family: 'Amiri', sans-serif;
+    color: rgb(126, 126, 126);
+}
+
+/*#### Footer ####*/
+
+.footer{
+    margin-top: 200px;
+    width: auto;
+    height: 200px;
+    padding: 20px;
+    bottom: 0px;
+    text-align:center;
+}
+
+.list-item {
+	list-style: none;
+	text-decoration: none;
+}
+
+.social-list {
+	float: left;
+}
+
+.social-icon {
+	color: rgb(193, 193, 193);
+	padding: 5px;
+}
+
+.social-text {
+	text-decoration: none;
+	color: rgb(193, 193, 193);
+	font-size: 40%;
+}
+
+.des-credits{
+    color: rgb(145, 145, 145);
+    font-size: 90%;
+}
+
+.copyrights {
+	text-align: center;
+	color: rgb(193, 193, 193);
+	margin-top: 100px;
+    font-size: 60%;
+}
+
+/*-- TOOLTPIS --*/
+
 .tooltip {
     display:inline-block;
     position:relative;
@@ -53,153 +353,14 @@ English:   font-family: 'Slabo 27px', sans-serif;
     box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
 
-/*#### Global Configuration ####*/
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Amiri', sans-serif;
-    font-size: 25px;
-}
-
-hr {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(228, 228, 228);
-    margin: 5px 0;
-    padding: 0;
-}
-
-.container{
-    margin: 0 auto;
-    width: 90%;
-}
-
-/*#### header ####*/
-.header{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
-
-.title{
-    font-size: 150%;
-    color: rgb(126, 126, 126);
-    padding-bottom: 10px; 
-}
-
-.navicon{
-	font-size: 160%;
-}
-
-.side-nav{
-	height: 100%;
-	width: 200px;
-	background-color: rgb(64, 64, 64);
-	float: left;
-}
-
-/*#### Content and posts Container ####*/
-
-.content-container{
-    width: 100%;
-    display: inline-block;
-}
-
-/*#### Post ####*/
-.posts-title{
-    text-align: center;
-    font-size: 120%;
-    font-family: 'Amiri', sans-serif;
-    color: rgb(126, 126, 126);
-    margin-bottom: 50px;
-}
-
-.post{
-    margin:   0 auto;
-    padding:  10px;
-    width:    60%;
-}
-
-.post-date{
-    color:rgb(6, 102, 81);
-    display: inline-block;
-    font-size: 60%;
-}
-
-.post-title{
-    text-align: right;
-    float: right;
-    font-size: 110%;
-    color: rgb(78, 102, 6);
-    transition: 0.5s;
-}
-.post-title:hover{
-    font-size:112%;
-    cursor: pointer;
-}
-
-.post-description{
-    direction: rtl;
-    color: rgb(20, 26, 3);
-    font-size: 80%;
-}
-
-.post-readmore{
-    text-align: right;
-    text-decoration: none;
-    color: rgb(42, 144, 190);
-    font-size: 80%;
-    transition: 0.5s;
-}
-.post-readmore:hover{
-    font-size: 90%;
-}
-
-.thumbnail{
-    width: 100%;
-    height: auto;
-}
-
-/*#### Footer ####*/
-
-.footer{
-    margin-top: 200px;
-    text-align: right;
-    width: auto;
-    height: 200px;
-    padding: 20px;
-    bottom: 0px;
-    background-color: rgb(64, 64, 64);
-}
-
-.list-item {
-	list-style: none;
-	text-decoration: none;
-}
-
-.social-list {
-	float: left;
-}
-
-.social-icon {
-	color: rgb(193, 193, 193);
-	padding: 5px;
-}
-
-.social-text {
-	text-decoration: none;
-	color: rgb(193, 193, 193);
-	font-size: 40%;
-}
-
-.des-credits{
-    color: rgb(145, 145, 145);
-    font-size: 90%;
-}
-
-.copyrights {
-	text-align: center;
-	color: rgb(193, 193, 193);
-	margin-top: 100px;
-    font-size: 60%;
+/*-- Media Queries --*/
+@media only screen and (max-width: 768px) {
+	.container{
+		width: 100%;
+	}
+	.post{
+		margin:   20px auto;
+        padding:  0px;
+		width:    80%;
+	}
 }
