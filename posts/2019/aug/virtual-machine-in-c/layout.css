@@ -76,7 +76,8 @@ hr {
 
 /* center the blockquote in the page */
 .blockquote-wrapper {
-    display: flex;
+    margin: 0 auto;
+    margin-top: 200px;
     height: 100vh;
     padding: 0 20px;
  }
