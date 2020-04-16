@@ -29,7 +29,7 @@ hr {
     text-align: center;
     margin-bottom: 100px;
     padding-top: 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.705)), url("back.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.705)), url("0.png");
     background-attachment: fixed;
     background-size: cover;
     height: 600px;
