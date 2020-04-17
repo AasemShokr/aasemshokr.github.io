@@ -8,15 +8,57 @@ English:   font-family: 'Slabo 27px', sans-serif;
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 200%;
+    color: #FFC534;
+}
+
+h2 {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 150%;
+    color: rgb(207, 146, 32);
+}
+
+h3 {
+    font-size: 140%;
+    color: #0B42AB;
+}
+
+h4 {
+    font-size: 130%;
+    color: #0CD752;
+}
+
+h5 {
+    font-size: 120%;
+}
+
+h6 {
+    font-size: 110%;
 }
 
 hr {
     height: 1px;
     border: 0;
-    border-top: 1px solid rgb(139, 139, 139);
+    border-top: 4px solid rgb(139, 139, 139, 0.3);
     margin: 10px 0;
     padding: 0;
+}
+
+img {
+    height: auto;
+    width: 60%;
+    margin: 0 20%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #DF3F03;
 }
 
 .container{
@@ -29,10 +71,10 @@ hr {
     text-align: center;
     margin-bottom: 100px;
     /*padding-top: 20px;*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.705)), url("Monetization In Unity.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.705)), url("../resources/back.jpg");
     background-attachment: fixed;
     background-size: cover;
-    height: 104px;
+    height: 95px;
 }
 
 .title{
@@ -144,6 +186,7 @@ hr {
 
 /*#### Content and posts Container ####*/
 
+
 .content-container{
     width: 100%;
     display: inline-block;
@@ -196,6 +239,7 @@ hr {
 	text-align: justify;
     color: rgb(31, 31, 31);
     font-size: 80%;
+    font-family: 'Comic Neue', cursive;
 }
 
 .post-readmore{
