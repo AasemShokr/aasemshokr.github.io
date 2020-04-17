@@ -28,10 +28,11 @@ hr {
 .header{
     text-align: center;
     margin-bottom: 100px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.705)), url("../resources/back.jpg");
+    /*padding-top: 20px;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.705)), url("Monetization In Unity.png");
     background-attachment: fixed;
     background-size: cover;
-    height: 670px;
+    height: 104px;
 }
 
 .title{
@@ -45,13 +46,13 @@ hr {
     color: rgba(255, 255, 255, 0.678);
 }
 
+.navicon{
+	font-size: 160%;
+}
+
 .headofpage{
     padding-top: 20px;
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.navicon{
-	font-size: 160%;
 }
 
 .navli{
@@ -173,14 +174,14 @@ hr {
 }
 
 .post-date{
-    float: right;
-    text-align: right;
     color:rgb(6, 102, 81);
     font-size: 60%;
+    text-align: right;
 }
 
 .post-title{
-    text-align: left;
+    text-align: right;
+    float: left;
     display: inline-block;
     font-size: 110%;
     color: rgb(207, 146, 32);
@@ -192,17 +193,13 @@ hr {
 }
 
 .post-description{
-    float: right;
 	text-align: justify;
     color: rgb(31, 31, 31);
     font-size: 80%;
-    width: 70%;
-    padding-left: 5%;
 }
 
 .post-readmore{
-    text-align: left;
-    float: right;
+    text-align: right;
     text-decoration: none;
     color: rgb(42, 144, 190);
     font-size: 80%;
@@ -213,12 +210,12 @@ hr {
 }
 
 .thumbnail{
-    width: 25%;
+    width: 100%;
     height: auto;
 
-    /*-webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;*/
+	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
@@ -260,7 +257,6 @@ hr {
 .me-title{
     text-align: center;
     font-size: 120%;
-    font-family: 'Amiri', sans-serif;
     color: rgb(126, 126, 126);
 }
 
